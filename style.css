@@ -1,0 +1,335 @@
+/* Resets */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html { font-size: 62.5%; line-height: 1.15;}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.9rem;
+}
+
+h1,h2,h3 {
+    font-family: 'Raleway', sans-serif;
+    color: #222;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.4rem;
+    margin-top: 8rem;
+    padding: .8rem;
+}
+h3 {
+    font-size: 1.36rem;
+    font-weight: normal;
+    color: #a0a0a0;
+    padding: 0 3.2rem 1.92rem;
+}
+
+h1 {
+    margin: 2rem auto;
+    text-align: center;
+    font-size: 3.5rem;
+    background: linear-gradient(90deg, #18681c, #757479);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/* Utilities */
+
+/* Container */
+.container {
+    max-width: 2100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 4%;
+}
+
+/* Card */
+.card {
+    border-radius: 3.2rem;
+    box-shadow: 0px 1.6rem 2.4rem rgba(0,0,0,0.5);
+    overflow: hidden;
+    max-width: 360px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.card .banner {
+    background-image: url(img/back.png);
+    background-color: #f4f4f4;
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    height: 17.6rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.card img {
+    background-color: #fff;
+    width: 10.8rem;
+    height:10.8rem;
+    box-shadow: 0 0.8rem 1.6rem rgba(0,0,0,0.3);
+    border-radius: 50%;
+    transform: translateY(50%);
+    transition: ease-in .1s;
+
+
+}
+.card img:hover {
+    transform: translateY(50%) scale(1.05);
+}
+.card .info {
+    margin-left: 3rem;
+}
+.card p, .modal-info p {
+    font-size: 1.4rem;
+    color: #333;
+    padding: .3rem;
+}
+
+.card span, .modal-info span {
+    font-weight: bold;
+    color: #111;
+    margin-right: .2rem;
+}
+
+.card .icons {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.card i {
+    background-color:#DCDCDC;
+    border-radius: 50%;
+    border: 1x solid#DCDCDC;
+    /* background-image: #f4f4f4;  */
+    box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+    padding: 10px;
+    transition: ease-in .1s;
+    /* color:linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f); */
+    color: #333333;
+    height: 39px;
+    width: 39px;
+    text-align: center;
+    /* display: inline; */
+    /* text-decoration: none; */
+  }
+
+  .card .icons #add {
+      color: #18681c; 
+  }
+  .card .icons #reject {
+      color: #ad2929de; 
+  }
+  .card a {
+      padding: .75rem;
+  }
+  .card i:hover {
+      transform: scale(1.2);
+      background-color:rgb(231, 221, 221); 
+  }
+
+  /* Modal */
+#modal {
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 0;
+    color: #111;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.modal-card {
+    background-color:#fff;
+    /* border-radius: 50%; */
+    border: 1x solid#333;
+    /* background-image: #f4f4f4;  */
+    box-shadow: 0 5px 15px rgba(68, 45, 46, 0.5);
+    padding: 5rem;
+    /* color:linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f); */
+    color: #333;
+    /* width: 50%; */
+    width: 50rem;
+    text-align: center;
+    display: flex;
+    position: relative;
+    border-radius: 1.1rem;
+    
+}
+
+.modal-card img {
+    width: 8.8rem;
+    height:8.8rem;
+    box-shadow: 0 0.8rem 1.6rem rgba(0,0,0,0.3);
+    border-radius: 50%;
+    margin-left: 2rem;
+}
+.modal-card .modal-info {
+    margin-left: 7rem;
+    background: #fff;
+}
+.modal-card .modal-info p {
+    padding: .3rem;
+    color: #333;
+}
+.modal-card .img-div {
+    display: flex;
+    align-items: center;
+}
+
+.modal-card .close-modal {
+    color: #111;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 1.5rem;
+    background: #DCDCDC;
+    /* border-radius: 65%; */
+    padding: .3rem .5rem;
+}
+.modal-card .close-modal:hover {
+    color: #ad2929de;
+}
+.modal-card #modal-name span {
+    font-family: 'Raleway';
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+.modal-card #modal-name  {
+    font-family: 'Raleway';
+    color: #18681c;
+    font-size: 1.9rem;
+    font-weight: bold;
+
+}
+/* Main Css */
+#profile {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ /* justify-content: center; */
+ margin: 4rem 0 7rem 0;
+}
+
+/* Recruits */
+#recruits table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 5rem;
+}
+#recruits table thead {
+    border: 1px solid #dee2e6;
+    border-bottom: 2px solid #dee2e6;
+}
+#recruits table th {
+    padding: 1.2rem;
+    border: 1px solid #dee2e6;
+    color: #333333;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+
+}
+#recruits table td {
+    text-align: center;
+    padding: 1.2rem;
+    border: 1px solid #dee2e6;
+
+}
+
+/* External */
+.btn-grad {
+    color: #000;
+    display: inline-block;
+    padding: .6rem 1.2rem;
+    text-align: center;
+    border: 0.3px solid #DCDCDC;
+    font-family: 'Lato';
+    font-weight: normal;
+    font-size: 1.6rem;
+    border-radius: .4rem;
+    text-decoration: none;
+    /* background-image: linear-gradient(90deg, #6a6f75, #232526); */
+    background: #DCDCDC;
+}
+.btn-grad:hover {
+    /* background-image: linear-gradient(90deg, #232526, #6a6f75); */
+    background: #f4f4f4;
+
+}
+
+/* Delete list btn */
+.deleteEmp {
+    margin-left: 1rem;
+    color: #ad2929de;
+    background: #DCDCDC;
+    padding: .7rem 1.2rem;
+    font-size: 1.6rem;
+    border-radius: .4rem;
+    border: 0.3px solid #DCDCDC;
+}
+.deleteEmp:hover {
+    background: #f4f4f4;
+}
+/* Instructions */
+#instructions {
+    font-size: 4rem;
+    margin: 3rem 0 0 0;
+
+}
+
+#instructions p {
+    padding: 1.7rem;
+}
+
+#instructions .fa-heart {
+    color: #18681c;
+}
+#instructions .fa-times {
+    color: #ad2929de;
+}
+
+/* Summary */
+.summary {
+    margin: 3rem;
+}
+
+.summary .btn-grad {
+    font-family: 'Lato' !important;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+/* User added */
+#userAdded {
+    margin: 2rem;
+    height: 2rem;
+    /* padding: .7rem; */
+
+}
+.userStyle {
+    padding: .7rem;
+    background: #4c8b4f;
+    color: #fff;
+    width: 340px;
+    text-align: center;
+    border-radius: 4px;
+    /* align-self: flex-start; */
+}

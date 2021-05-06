@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/df397e3bed.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Raleway:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Recruitment App</title>
+</head>
+
+<body>
+    <header>
+        <h1>Recruitment App</h1>
+        <div id="instructions" class="container">
+            <p>Click on "<i class="fas fa-heart"></i>" to Add User</p>
+            <p>Click on "<i class="fas fa-times"></i>" to Skip User</p>
+        </div>
+    </header>
+
+
+    <main class="container">
+        <section id="profile">
+            <div id="userAdded"></div>
+            <div class="card">
+                <div class="banner">
+                    <img id="profile-pic" class="img" src="" alt="">
+                </div>
+                <div class="name">
+                    <h2 id="infoName"></h2>
+                </div>
+                <div class="title">
+                    <h3 id="infoTitle"></h3>
+                </div>
+                <div class="info">
+                    <p><span>Age: </span><em id="infoAge"></em></p>
+                    <p><span>Location: </span><em id="infoLoc"></em></p>
+                    <p><span>Phone: </span><em id="infoPhone"></em></p>
+                    <p><span>Years of exp: </span><em id="infoExp"></em></p>
+                </div>
+                <div class="icons">
+                    <a href="#"><i id="add" class="fas fa-heart"></i></a>
+                    <a href="#"><i id="reject" class="fas fa-times"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="recruits" class="container pure-table">
+            <div class="summary">
+                <a id="summaryBtn" class="btn-grad" href="#">View Summary</a>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Occupaion</th>
+                        <th>Profile</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    <!-- <tr>
+                        <td>Luigi Dimude</td>
+                        <td>Backend Engineer</td>
+                        <td><a class="btn-grad" href="#">view</a> <i class="fas fa-times deleteEmp"></i></td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <section id="modal">
+        <div class="modal-card">
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+    <script src="test.js"></script>
+</body>
+
+</html>
